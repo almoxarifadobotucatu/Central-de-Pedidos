@@ -138,8 +138,26 @@
       <button type="button" onclick="window.location.href='https://almoxarifadobotucatu.github.io/calculadora/'">Calculadora</button>
     </div>
   </div>
-  <footer>
-    © 2025 Todos os direitos reservados.
-  </footer>
+<footer>
+  <p>© <span id="ano"></span>. Todos os direitos reservados.</p>
+</footer>
+
+<style>
+  footer {
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    font-size: 0.6rem;
+    color: #777;
+    font-family: Arial, sans-serif;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
