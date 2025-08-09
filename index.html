@@ -24,7 +24,7 @@
       background-color: var(--background-light);
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,15 +34,17 @@
     }
 
     .container {
-      max-width: 800px;
-      width: 100%;
       background-color: var(--background-white);
-      margin: 40px auto;
       padding: 50px;
       border-radius: 20px;
       box-shadow: var(--shadow-light);
       transition: var(--transition-all);
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
     }
 
     .container:hover {
@@ -50,19 +52,18 @@
     }
 
     h2 {
-      text-align: center;
       color: var(--text-dark);
-      margin-bottom: 40px;
       font-weight: 700;
       font-size: 1.5rem;
       letter-spacing: -0.025em;
+      margin: 0;
     }
 
     .buttons {
-      margin-top: 50px;
       display: flex;
       justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
     button {
@@ -85,7 +86,6 @@
 
     @media (max-width: 768px) {
       .container {
-        margin: 20px;
         padding: 30px;
       }
       .buttons {
@@ -113,8 +113,8 @@
   <div class="container">
     <h2>Seleção de Pedido</h2>
     <div class="buttons">
-      <button type="button">Pedido Extra</button>
-      <button type="button">Pedido Mensal</button>
+      <button type="button" onclick="window.location.href='https://pedidoextra.github.io/pedidoextra/'">Pedido Extra</button>
+      <button type="button" onclick="window.location.href='https://pedidoextra.github.io/pedidomensal/'">Pedido Mensal</button>
     </div>
   </div>
   <footer>
