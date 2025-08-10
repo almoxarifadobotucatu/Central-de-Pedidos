@@ -9,7 +9,7 @@
     :root {
       --primary-color: #0a66c2;
       --primary-hover-color: #004182;
-      --primary-extra-color: #1db954; /* Terceira cor */
+      --primary-extra-color: #1db954;
       --danger-color: #e53e3e;
       --danger-hover-color: #c53030;
       --background-light: #1a1a2e;
@@ -46,7 +46,7 @@
       align-items: center;
       justify-content: center;
       gap: 40px;
-      transform: translateY(-40px);
+      transform: translateY(-80px); /* Subiu mais para cima */
     }
 
     .container:hover {
@@ -100,6 +100,7 @@
     @media (max-width: 768px) {
       .container {
         padding: 30px;
+        transform: translateY(-60px); /* Ajuste menor no mobile */
       }
       .buttons {
         flex-direction: column;
@@ -138,31 +139,9 @@
       <button type="button" onclick="window.location.href='https://almoxarifadobotucatu.github.io/calculadora/'">Calculadora</button>
     </div>
   </div>
-</script>
-</body>
-</html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Rodapé Profissional Pequeno</title>
-  <style>
-    footer {
-      position: fixed;
-      bottom: 8px;
-      right: 12px;
-      font-size: 9px;            /* fonte menor */
-      color: #888888;
-      background-color: transparent;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      opacity: 0.75;
-      user-select: none;
-      text-shadow: 0 0 1px rgba(0,0,0,0.1);
-      letter-spacing: 0.02em;
-    }
-  </style>
-</head>
-<body>
 
   <footer>
-    © 2025.Todos os direitos reservados.
+    © 2025. Todos os direitos reservados.
   </footer>
+</body>
+</html>
